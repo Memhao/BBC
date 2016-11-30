@@ -1,7 +1,13 @@
 package com.api.event;
 
 public interface IDispatcher {
-
+	
+	/**
+	 * Subscribe listeners for events that are strained by a filters
+	 * @param filter what events a listener are registered 
+	 * in other words a class may register(listen) for more events
+	 * @param listener is class that are interested in events specified by filter
+	 */
 	public void subscribeListener(IFilter filter,IListener listener);
 	
 	

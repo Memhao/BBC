@@ -1,5 +1,7 @@
 package com.api.event;
 
+import java.util.Vector;
+
 public interface IEvent {
 	
 	/**
@@ -7,4 +9,6 @@ public interface IEvent {
 	 * @return type of event 
 	 */
 	String getType();
+	
+	Vector<String> getAttributes();
 }

@@ -1,11 +1,12 @@
 package com.api.event;
 
+
 public interface IFilter {
 	
 	/**
 	 * 
-	 * @param filters are provided by listeners(subscribers) to express their preferences for certain events
+	 * @param vector are provided by listeners(subscribers) to express their preferences for certain events
 	 * @return true if a certain event that provides information for this method satisfy a certain filter specified by subscriber, else false 
 	 */
-	boolean verify(String ...filters);
+	boolean verify(IEvent event);
 }

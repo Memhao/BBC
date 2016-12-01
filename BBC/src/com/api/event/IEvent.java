@@ -11,4 +11,5 @@ public interface IEvent {
 	String getType();
 	
 	Vector<String> getAttributes();
+
 }

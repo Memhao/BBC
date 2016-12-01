@@ -4,16 +4,16 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import com.app.Domain;
-import com.app.Editor;
-import com.app.News;
-import com.app.Reader;
-import com.app.event.AppearEvent;
-import com.app.event.DeletionEvent;
-import com.app.event.ReadNewsEvent;
-import com.app.event.UpdateEvent;
-import com.event.EventRouter;
-import com.event.Event;
+import com.oldapp.Domain;
+import com.oldapp.Editor;
+import com.oldapp.News;
+import com.oldapp.Reader;
+import com.oldapp.event.AppearEvent;
+import com.oldapp.event.DeletionEvent;
+import com.oldapp.event.ReadNewsEvent;
+import com.oldapp.event.UpdateEvent;
+import com.oldevent.Event;
+import com.oldevent.EventRouter;
 public class Main {
 	public static void main(String argv[])
 	{

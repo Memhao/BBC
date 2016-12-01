@@ -9,7 +9,7 @@ public class WeatherFilter implements IFilter{
 
 	private Vector<String> domains;
 	public WeatherFilter() {
-		// TODO Auto-generated constructor stub
+		this.domains = new Vector<String>();
 		this.domains.addElement("WEATHER");
 	}
 	@Override

@@ -24,15 +24,15 @@ public class Reader extends EventGenerator implements IListener{
 		switch (event.getType()) {
 		case NewsEvent.NEWS_APPEAR_EVENT:
 			NewsAppearEvent appevent = ((NewsAppearEvent)event);
-			System.out.println("["+this.name+"]" + "Fresh news:" + appevent.getNews().getContent());
+			System.out.println("["+this.name+"]" + "Fresh news:" +appevent.getNews().getTitle()+ appevent.getNews().getContent());
 			break;
 		case NewsEvent.NEWS_UPDATE_EVENT:
 			NewsUpdateEvent updaeevent = ((NewsUpdateEvent)event);
-			System.out.println("["+this.name+"]" + "Updated news:" + updaeevent.getNews().getContent());
+			System.out.println("["+this.name+"]" + "Updated news:" + updaeevent.getNews().getTitle()+ updaeevent.getNews().getContent());
 			break;
 		case NewsEvent.NEWS_DELETE_EVENT:
 			NewsDeleteEvent deleteevent = ((NewsDeleteEvent)event);
-			System.out.println("["+this.name+"]" + "Deleted news"+ deleteevent.getNews().getContent()+ " No longer available in system");
+			System.out.println("["+this.name+"]" + "Deleted news"+deleteevent.getNews().getTitle()  + deleteevent.getNews().getContent()+ " No longer available in system");
 			break;
 		default:
 			break;
